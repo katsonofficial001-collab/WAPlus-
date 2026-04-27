@@ -1,54 +1,70 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>WAPlus</title>
+
+  <!-- Mobile fit -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#16a34a">
+
+  <!-- PWA -->
   <link rel="manifest" href="manifest.json">
-<div class="header">WAPlus by Katson 💰</div>
-<p style="padding: 10px 20px;">
-Earn with simple steps. Watch → Start → Get results.
-</p>
+
   <style>
     body {
       margin: 0;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       background: #ffffff;
       color: #064e3b;
-      text-align: center;
     }
 
     .header {
       background: #16a34a;
       color: white;
       padding: 20px;
-      font-size: 24px;
+      text-align: center;
+      font-size: 22px;
       font-weight: bold;
     }
 
     .container {
+      max-width: 400px;
+      margin: auto;
       padding: 20px;
+      text-align: center;
     }
 
     .card {
       background: #f0fdf4;
-      margin: 15px 0;
       padding: 15px;
       border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin-top: 0;
     }
 
     button {
-      margin-top: 10px;
+      width: 100%;
       padding: 12px;
-      width: 90%;
-      max-width: 300px;
+      margin-top: 10px;
       border: none;
       border-radius: 8px;
-      font-size: 16px;
       background: #16a34a;
       color: white;
+      font-size: 16px;
     }
 
-    button:hover {
+    button:active {
       background: #15803d;
+    }
+
+    .warning {
+      color: red;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -59,39 +75,42 @@ Earn with simple steps. Watch → Start → Get results.
 
   <div class="container">
 
+    <p>Earn money daily using just your phone. No experience needed.</p>
+
     <div class="card">
-      <h3>📌 Watch Tutorial</h3>
-      <p>Learn how everything works before starting</p>
+      <h3>🎥 Tutorial</h3>
+      <p>Watch this before starting</p>
       <button onclick="watchVideo()">Watch Now</button>
     </div>
 
     <div class="card">
-      <h3>🚀 Get Started</h3>
-      <p>Use my referral link to begin earning</p>
+      <h3>🚀 Start Earning</h3>
+      <p>Click below to begin</p>
       <button onclick="join()">Start Now</button>
+      <p class="warning">Limited slots available!</p>
     </div>
 
     <div class="card">
       <h3>📞 Need Help?</h3>
-      <p>Chat me directly on WhatsApp</p>
+      <p>Chat me directly</p>
       <button onclick="contact()">Contact Me</button>
     </div>
 
   </div>
-  
-<script>
-function watchVideo() {
-  alert("Tutorial coming soon 🎥");
-}
 
-function join() {
-  window.location.href = "https://n1.8gs3.com/go/82768207";
-}
+  <script>
+    function watchVideo() {
+      alert("Tutorial coming soon 🎥");
+    }
 
-function contact() {
-  window.location.href = "https://wa.me/2349075928878";
-}
-</script>
+    function join() {
+      window.location.href = "https://n1.8gs3.com/go/82768207";
+    }
+
+    function contact() {
+      window.location.href = "https://wa.me/2349075928878";
+    }
+  </script>
 
 </body>
 </html>
